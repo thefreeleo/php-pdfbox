@@ -1,0 +1,39 @@
+{
+    "name": "leomage/php-pdfbox",
+    "type": "library",
+    "description": "PHP-PDFBox",
+    "keywords": ["pdf", "PDFBox"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leo Lee",
+            "email": "qeo@me.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Pdfbox\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PdfboxTests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.1",
+        "psr/log": "^1.0",
+        "symfony/process": "^4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "^6.2"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "archive": {
+        "exclude": ["/examples"]
+    }
+}
